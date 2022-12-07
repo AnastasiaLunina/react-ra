@@ -1,10 +1,8 @@
-# Домашнее задание к курсу «React: библиотека № 1 в современной фронтенд-разработке»
-
-## Список заданий
+# React
 
 ### Блок 1. Компоненты
 
-1.1. [Компоненты](components)
+1.1. [Компоненты](https://github.com/AnastasiaLunina/react-ra/tree/main/components)
 
 1.2. [События и состояние](events-state)
 
@@ -33,11 +31,3 @@
 3.2. [Redux Observable](observable)
 
 3.3. [Redux Saga](saga)
-
-### Полезные ссылки:
-
-* [исходники с лекций](https://github.com/netology-code/ra16-code)
-* [требования к домашним работам](requirements.md)
-* [список рекомендуемого ПО](software.md)
-* [инструкция по работе в терминале](terminal.md)
-* [типичные проблемы и способы их решения](problems.md)
