@@ -1,0 +1,35 @@
+.App {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+.toolbar {
+  padding: 10px 0;
+}
+
+.btn {
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 7px 10px;
+  border: 1px solid black;
+}
+
+.project-list {
+  width: 100%;
+  columns: 3;
+  column-gap: 16px;
+}
+
+img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  margin-bottom: 19px;
+}
+
+.done {
+  background-color: #A6A9B6;
+}
