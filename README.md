@@ -4,7 +4,7 @@
 
 1.1. [Components](https://github.com/AnastasiaLunina/react-ra/tree/main/components)
 
-1.2. [Events and props](events-state)
+1.2. [Events and props](https://github.com/AnastasiaLunina/react-ra/tree/main/events-state)
 
 1.3. [Props](props)
 
