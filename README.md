@@ -2,7 +2,7 @@
 
 ### Components
 
-1.1. [Компоненты](https://github.com/AnastasiaLunina/react-ra/tree/main/components)
+1.1. [Components](https://github.com/AnastasiaLunina/react-ra/tree/main/components)
 
 1.2. [Events and props](events-state)
 
@@ -10,7 +10,7 @@
 
 1.4. [Forms](forms)
 
-### Блок 2. SPA
+### SPA
 
 2.1. [Component composition компонентов](composition)
 
@@ -22,7 +22,7 @@
 
 2.5. [React Router](router)
 
-### Блок 3. Redux
+### Redux
 
 3.1. [Redux](redux)
 

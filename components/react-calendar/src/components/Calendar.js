@@ -17,7 +17,7 @@ const Calendar = ({date}) => {
             <div className="ui-datepicker-material-header">
                 <Weekdays day={fullDate.weekday}/>
                 <div className="ui-datepicker-material-date">
-                    <div className="ui-datepicker-material-day-num">{fullDate.weekday}</div>
+                    <div className="ui-datepicker-material-day-num">{fullDate.currentDay}</div>
                     <GenitiveMonths month={fullDate.month} />
                     <div className="ui-datepicker-material-year">{fullDate.year}</div>
                 </div>

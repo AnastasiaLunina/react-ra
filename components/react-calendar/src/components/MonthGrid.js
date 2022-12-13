@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const MonthGrid = ({fullDate}) => {
+const MonthGrid = ({ fullDate }) => {
     const currentMonthStart = new Date(fullDate.year, fullDate.month);
     const nextMonthDays = new Date(fullDate.year, fullDate.month + 1);
     const previousMonthDays = new Date(fullDate.year, fullDate.month - 1);
@@ -18,7 +18,7 @@ const MonthGrid = ({fullDate}) => {
         let tableRow = [];
 
         for (let j = 0; j < 7; j++) {
-            if (activeDay === fullDate.day) {
+            if (activeDay === fullDate.currentDay) {
                 tableRow.push(<td key={id} className="ui-datepicker-today">{activeDay}</td>)
                 id++
             } else if (activeDay > 0 && activeDay <= currentMonthDays) {
