@@ -1,20 +1,20 @@
 # React
 
-### Блок 1. Компоненты
+### Components
 
 1.1. [Компоненты](https://github.com/AnastasiaLunina/react-ra/tree/main/components)
 
-1.2. [События и состояние](events-state)
+1.2. [Events and props](events-state)
 
 1.3. [Props](props)
 
-1.4. [Формы](forms)
+1.4. [Forms](forms)
 
-### Блок 2. Продвинутые техники, одностраничные приложения
+### Блок 2. SPA
 
-2.1. [Композиция компонентов](composition)
+2.1. [Component composition компонентов](composition)
 
-2.2. [Жизненный цикл и работа с HTTP](lifecycle-http)
+2.2. [Lifecycle and HTTP](lifecycle-http)
 
 2.3. [HOC](hoc)
 
@@ -22,7 +22,7 @@
 
 2.5. [React Router](router)
 
-### Блок 3. Redux - управление состоянием
+### Блок 3. Redux
 
 3.1. [Redux](redux)
 
