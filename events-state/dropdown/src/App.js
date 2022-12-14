@@ -4,10 +4,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className='main__item task task_3 _container'>
-      <div className='task__body task__body_task3'>
+    <div>
         <Dropdown />
-      </div>
     </div>
   );
 }

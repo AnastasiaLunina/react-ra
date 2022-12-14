@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default function DropdownItem() {
@@ -11,6 +12,12 @@ export default function DropdownItem() {
         { name: 'Log Out', selected: false },
     ];
 
+    const dropdownListItemsIndex = dropdownListItems.map(dropdownListItem => (
+        {id: uuidv4(), ...dropdownListItem})) 
+
+
+    console.log(dropdownListItemsIndex)
+
     const [selected, setSelected] = useState();
 
     const onItemClick = (itemName) => {
@@ -19,9 +26,9 @@ export default function DropdownItem() {
 
     return (
         <>
-            {dropdownListItems.map((dropdownListItem, index) =>
+            {dropdownListItemsIndex.map((dropdownListItem) =>
                 <li
-                    key={index}
+                    key={dropdownListItem.id}
                     className={selected === dropdownListItem.name ? 'active' : ''}
                     onClick={() => onItemClick(dropdownListItem.name)}>
                     <a className="dropdown-link" href="#dropdown">{dropdownListItem.name}</a>
