@@ -1,20 +1,17 @@
 import React from 'react';
+import classNames from 'classnames';
+
 
 function Item({ item }) {
 
   const { url, MainImage, title, currency_code, price, quantity } = item;
-  let level;
 
   if (!url || !MainImage || !title || !currency_code || !price|| !quantity) {
     return null;
   }
 
-  if(quantity < 11) {
-    level = 'item-quantity level-low'
-  } else if (quantity > 10 && quantity < 21) {
-    level = 'item-quantity level-medium'
-  } else {
-    level = 'item-quantity level-high'
+  const currency = () => {
+    return currency_code === 'USD' ? '$' + price : currency_code === 'GBR' ? 'GBR' + price : '€' + price
   }
 
   return (
@@ -29,9 +26,14 @@ function Item({ item }) {
                 {title && title.length > 50 ? title.substring(0, 50) + '...' : title}
               </p>
               <p className="item-price">
-                {currency_code === 'USD' ? '$' + price : currency_code === 'GBR' ? 'GBR' + price : '€' + price }
+                {currency}
               </p>
-              <p className={level}>{quantity} left</p>
+              <p className={classNames('item-quantity', {
+                                       'level-low' : quantity < 11,
+                                       'level-medium': quantity > 10 && quantity < 21, 
+                                       'level-high': quantity >= 21})}>
+                {quantity} left
+              </p>
           </div>
       </div>
   )

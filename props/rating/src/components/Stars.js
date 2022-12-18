@@ -16,10 +16,8 @@ export default function Stars({ count }) {
         {id: uuidv4(), ...star})) 
 
     return (
-        <>
-            <ul className="card-body-stars u-clearfix">
-                {starsArrayIndex.map((star) => <Star key={star.id}/>)}
-            </ul>
-        </>
+        <ul className="card-body-stars u-clearfix">
+            {starsArrayIndex.map((star) => <Star key={star.id}/>)}
+        </ul>
     )
 }
