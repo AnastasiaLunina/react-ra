@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hex2rgb__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.hex2rgb__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hex__input {
+  height: 50px;
+  width: 200px;
+  outline-style: none;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.rgb__result {
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+
+}
+
+.rgb__result-par {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.rgb__result-test {
+  height: 50px;
+  width: 200px;
+  font-weight: bolder;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin-top: 20px;
+
+}
