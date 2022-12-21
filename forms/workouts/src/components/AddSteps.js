@@ -13,7 +13,7 @@ function AddSteps({ handleAdd, edit }) {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if (form.date.trim() === '' || form.date.length !== 8 || form.distance.trim() === '' || !Number(form.distance)) {
+        if (form.date.trim() === '' || form.date.length !== 10 || form.distance.trim() === '' || !Number(form.distance)) {
             return null;    
         }
         
@@ -30,8 +30,8 @@ function AddSteps({ handleAdd, edit }) {
     return (
             <form className="form" onSubmit={onSubmit}>
                 <label>
-                    <span>Дата (ДД.ММ.ГГ)</span>
-                    <input className="input" name="date" value={form.date} onChange={onAddSteps}></input>
+                    <span>Дата</span>
+                    <input className="input" name="date" type="date"  value={form.date} onChange={onAddSteps}></input>
                 </label>
                 <label>
                     <span>Пройдено км</span>

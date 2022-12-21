@@ -7,7 +7,7 @@ function StepsList({ steps, onDelete, onEdit }) {
     return (
         <>
             <div className="list__title">
-                <span>Дата (ДД.ММ.ГГ)</span>
+                <span>Дата</span>
                 <span>Пройдено км</span>
                 <span>Действия</span>
             </div>
