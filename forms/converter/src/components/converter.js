@@ -8,6 +8,5 @@ export default function converter(hex) {
     if (shortHex) {
         return(`rgb(${shortHex.slice(1).map(e => 0x11 * parseInt(e, 16))})`);
     }
-  
     return null;
 }

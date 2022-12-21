@@ -1,7 +1,6 @@
 Forms
 ===
 
-1. [Converter]()
-1. [Workouts]()
-1. [Photo manager]() 
+1. [Converter](https://github.com/AnastasiaLunina/react-ra/tree/main/forms/converter)
+1. [Workouts](https://github.com/AnastasiaLunina/react-ra/tree/main/forms/workouts)
 
