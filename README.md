@@ -14,7 +14,7 @@
 
 2.1. [Component composition компонентов](https://github.com/AnastasiaLunina/react-ra/tree/main/composition)
 
-2.2. [Lifecycle and HTTP](https://github.com/AnastasiaLunina/react-ra/tree/main/props/lifecycle-http)
+2.2. [Lifecycle and HTTP](https://github.com/AnastasiaLunina/react-ra/tree/main/lifecycle)
 
 2.3. [HOC](https://github.com/AnastasiaLunina/react-ra/tree/main/props/hoc)
 
