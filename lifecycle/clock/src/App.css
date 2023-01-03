@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form label {
+  margin-right: 20px;
+}
+
+.form input, .form button {
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.form input {
+  width: 250px;
+}
+
+.clock-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clock-list-item {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clock-list-item button {
+  align-self: flex-end;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.clock{
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid black; 
+}
+
+.clock:before{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.hour-hand-container,
+.min-hand-container,
+.sec-hand-container{
+  position: absolute;
+}
+
+.hour-hand-container, 
+.hour-hand{
+  width: 60px;
+  height: 60px;
+}
+.min-hand-container, 
+.min-hand {
+  width: 80px;
+  height: 80px;
+}
+.sec-hand-container, 
+.sec-hand {
+  width: 100px;
+  height: 100px;
+}
+
+.hour-hand, 
+.min-hand, 
+.sec-hand {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hour-hand:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: black;
+  z-index: 1;
+  border-radius: 6px 6px 0 0;
+}
+.min-hand:before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: black;
+  z-index: 2;
+  border-radius: 6px 6px 0 0;
+}
+.sec-hand:before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: red;
+  z-index: 3;
+  border-radius: 5px 5px 0 0;
+}
+
+.samples-timezone-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom: 50px;
+}
+
+.samples-timezone-container h2 {
+  margin-bottom: 10px;
+}
+
+.samples-timezone-container h4 span {
+  color: red;
+}
