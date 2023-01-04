@@ -1,24 +1,21 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ClockDisplay from './ClockDisplay';
 
-class Clock extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            time: this.onOffsetDate(this.props.zone) 
-        };
-    }
+function Clock(props) {
 
-    componentDidMount() {
-        this.timerID = setInterval(() => this.tick(), 1000);
-    }
+    const [time, setTime] = useState(onOffsetDate(props.zone));
 
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
+    useEffect(() => {
+        const timerID = setInterval(() => {
+          tick();
+        }, 1000);
+        return () => clearInterval(timerID);
+      // eslint-disable-next-line
+      }, []);
 
-    onOffsetDate(zone) {
+    function onOffsetDate(zone) {
         const date = new Date();
         const hour = date.getUTCHours() + +zone;
         const minute = date.getUTCMinutes();
@@ -26,27 +23,23 @@ class Clock extends React.Component {
         return {hour, minute, second};
     }
 
-    tick() {
-        this.setState(
-            { 
-                time: this.onOffsetDate(this.props.zone) 
-            }
+    function tick() {
+        setTime(
+            {time: onOffsetDate(props.zone)}
         );
     }
 
-    render() {
-        return (
+    return (
             <li className="clock-list-item">
-                <div className="zone-title">{this.props.name}</div>
-                <button onClick={() => this.props.onDelete(this.props.id)}>&#10005;</button>
+                <div className="zone-title">{props.name}</div>
+                <button onClick={() => props.onDelete(props.id)}>&#10005;</button>
                 <div className="clock">
-                    <ClockDisplay minute={this.state.time.minute} 
-                                  hour={this.state.time.hour} 
-                                  second={this.state.time.second}/>
+                    <ClockDisplay minute={time.minute} 
+                                  hour={time.hour} 
+                                  second={time.second}/>
                 </div>
             </li>
         )
-    }
 }
 
 Clock.propTypes = {
