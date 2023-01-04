@@ -2,6 +2,7 @@ import React from 'react';
 import Cards from './Cards';
 import AddCard from './AddCard';
 
+
 class Notes extends React.Component {
     constructor() {
         super();
@@ -52,7 +53,8 @@ class Notes extends React.Component {
                     <h1>Notes</h1>   
                     <button className="loading-btn" 
                             type="button" 
-                            onClick={this.loadingNotes}><span className="loading"></span>
+                            onClick={this.loadingNotes}>
+                                <span className="loading"></span>
                     </button>
                 </div>
                 <Cards notes={this.state.notes} onDelete={this.onDelete} />
@@ -62,4 +64,4 @@ class Notes extends React.Component {
     }
 }
 
-export default Notes
+export default Notes;

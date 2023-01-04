@@ -14,4 +14,4 @@ Card.propTypes = {
     onDelete: PropTypes.func
 }
 
-export default Card
+export default Card;

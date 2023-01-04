@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -20,25 +21,24 @@ button {
 
 .loading-btn {
   display: block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  background: none;
   border-radius: 50%;
-  border: 1px solid rgb(29, 28, 28);
-  margin-left: 20px;
+  border: 1px solid black;
+  margin-left: 15px;
 }
 
 .loading {
-  display:inline-block;
-  position:relative;
-  vertical-align:middle;
-  width:  14px;
-  height: 14px;
-  border:1px solid transparent;
-  border-top-color: rgb(18, 202, 18);
-  border-bottom-color: rgb(18, 202, 18);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-top-color: green;
+  border-bottom-color: green;
   border-radius:50%;
-  
 }
 
 .loading:after,
@@ -47,18 +47,18 @@ button {
   content: "";
   width:0; height:0;
   border:4px solid transparent;
-  border-bottom-color: rgb(18, 202, 18);
+  border-bottom-color: green;
 }
 
 .loading:after{
-  top:1px;
-  right:-5px;
+  top: 1px;
+  right: -5px;
   transform: rotate(135deg);
 }
 
 .loading:before{
-  top:5px;
-  left:-4px;
+  top: 5px;
+  left: -5px;
   transform: rotate(-45deg);
 }
 
@@ -75,7 +75,6 @@ button {
 }
 
 .add-card h2 {
-  font-size: 16px;
   font-weight: normal;
   margin-bottom: 10px;
 }
@@ -99,12 +98,12 @@ button {
 }
 
 .add-btn {
-  display: block;
+  display: flex;
   width: 30px;
   height: 30px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid rgb(78, 76, 76);
+  border: 1px solid black;
   margin-left: auto;
   position: relative;
 }
@@ -117,8 +116,8 @@ button {
   display: block;
   width: 7px;
   height: 7px;
-  border-right: 4px solid rgb(51, 49, 49);
-  border-bottom: 4px solid rgb(51, 49, 49);
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
   transform: rotate(-45deg);
 }
 
