@@ -16,7 +16,7 @@
 
 2.2. [Lifecycle and HTTP](https://github.com/AnastasiaLunina/react-ra/tree/main/lifecycle)
 
-2.3. [HOC](https://github.com/AnastasiaLunina/react-ra/tree/main/props/hoc)
+2.3. [HOC](https://github.com/AnastasiaLunina/react-ra/tree/main/hoc)
 
 2.4. [hooks, Context API](https://github.com/AnastasiaLunina/react-ra/tree/main/props/hooks-context)
 

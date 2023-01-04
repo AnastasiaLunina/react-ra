@@ -24,9 +24,7 @@ function Clock(props) {
     }
 
     function tick() {
-        setTime(
-            {time: onOffsetDate(props.zone)}
-        );
+        setTime(onOffsetDate(props.zone));
     }
 
     return (
